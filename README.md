@@ -24,6 +24,11 @@ Social Wall uses official external SDK Libs for:
 ### Example
 SocialWall is very easy to use:
 
+ * Include the library
+```sh
+require_once('SocialWall.php');
+```
+
  * Setup your configuration
 ```sh
 $limit = 10;
