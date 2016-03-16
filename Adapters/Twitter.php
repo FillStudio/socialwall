@@ -62,7 +62,7 @@ class SocialWall_Twitter_Adapter implements SocialWall_iAdapter
 
         // Get User Timeline
         $results = json_decode(json_encode($this->_getUserTimeline()), true);
-		//debug($results);
+        
         //  Parse results
         $this->_elements = $this->_parseResults($results);
 
