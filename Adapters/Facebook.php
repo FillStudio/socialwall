@@ -3,7 +3,7 @@
  *
  * Facebook Class that implements iAdapter
  * 
- * @author  - www.fillstudio.com
+ * @author Aldo Zorzi - www.fillstudio.com
  * 
  * Get public stream this current Social Network
  * 
