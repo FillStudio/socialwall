@@ -16,7 +16,6 @@ class SocialWall
 	protected $_elements = array();
     	protected $_email = '';
 
-    
 	public function __construct()
 	{
 		require_once('Adapters/iAdapter.php');
@@ -42,15 +41,15 @@ class SocialWall
 				$socialResult = $socialLoader->load($socialParams);
 				if(empty($socialResult))
 				{
-                    $this->_sendLogEmail($socialName,"Empty response\nParams:\n".print_r($socialParams,true));
+                    			$this->_sendLogEmail($socialName,"Empty response\nParams:\n".print_r($socialParams,true));
 				}
 			} catch (Exception $e) {
-                $this->_sendLogEmail($socialName,$e->getMessage()."\nParams:\n".print_r($socialParams,true));
+                		$this->_sendLogEmail($socialName,$e->getMessage()."\nParams:\n".print_r($socialParams,true));
 			}
 			foreach($socialResult as $result)
 			{
-                $result['social'] = $socialName;
-                $this->_elements[] = $result;
+        			$result['social'] = $socialName;
+                		$this->_elements[] = $result;
 			}
 		}
 		$this->_orderElements();
@@ -59,7 +58,7 @@ class SocialWall
         
 	public function setLogEmail($email = ''){
 		if(!empty($email)){
-            		$this->_email = $email;
+	    		$this->_email = $email;
 		}
 	}
 
