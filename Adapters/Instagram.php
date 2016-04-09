@@ -9,6 +9,10 @@
  * 
  */
 
+
+
+// LIB USAGE: 
+
 class SocialWall_Instagram_Adapter implements SocialWall_iAdapter
 {
     protected $_params = array(
@@ -22,15 +26,7 @@ class SocialWall_Instagram_Adapter implements SocialWall_iAdapter
     public function __construct(){
 
     }
-    
-    
-    /**
-    *   @params:
-    *       'limit'
-    *       'client_id'
-    *       'client_secret' 
-    *       'media_size'(optional)
-    */  
+
     public function load($params = null)
     {
         //   Merge default params
@@ -44,15 +40,15 @@ class SocialWall_Instagram_Adapter implements SocialWall_iAdapter
         //  Parse results
         $this->_elements = $this->_parseResults($results);
         
+        // Results
+        /*$this->_elements[] = array(
+            'link'=>'www.instagram.com'
+        );*/
         return $this->_elements;
     }
 
 
-    /* ***************************************
-    *
-    *   Protected Functions
-    *
-    *   *********************************** */
+
     protected function _getRecentMedia(){
         if(empty($this->_params['client_id']))
         {
@@ -73,6 +69,7 @@ class SocialWall_Instagram_Adapter implements SocialWall_iAdapter
     
     
     protected function _parseResults($results){
+        if(empty($results['data'])) return array();
         foreach ($results['data'] as $r):
             $parsed_results[] = array(
                 "id" => $r['id'],
