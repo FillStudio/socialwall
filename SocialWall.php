@@ -4,7 +4,7 @@
  *
  * SocialWall Class 
  * 
- * @author Aldo Zorzi - www.fillstudio.com
+ * @author Aldo Zorzi & Emanuele Tortolone - www.fillstudio.com
  * 
  * Retrieve public stream from Social Network and store into an array
  * 
