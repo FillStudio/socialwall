@@ -34,14 +34,14 @@ require_once('SocialWall.php');
 $limit = 10;
 $social_config = array(
     'facebook'=>array(
-		'id'=>'your_facebook_id',
+		'id'=>'facebook_id',
         'limit'=>$limit,
         'api_key' => 'your_api_key',
         'api_secret'=> 'your_api_secret',
         'app_token'=> 'your_app_token'
     ),
     'twitter'=>array(
-		'id'=>'your_twitter_username',
+		'id'=>'twitter_username',
         'limit'=>$limit,
         'media_size' => 'medium',
         'access_token' => 'your_access_token',
@@ -50,12 +50,12 @@ $social_config = array(
         'consumer_secret' => 'your_consumer_secret'
     ),
     'youtube'=>array(
-		'id'=>'your_youtube_id',
+		'id'=>'youtube_id',
         'limit'=>$limit,
         'api_key' => 'your_api_key'
     ),
     'instagram' => array(
-		'id'=>'your_instagram_id',
+		'id'=>'instagram_id',
         'limit'=>$limit,
         'client_id' => 'your_client_id',
         'client_secret' => 'your_client_secret'
