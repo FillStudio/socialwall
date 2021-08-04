@@ -1,6 +1,8 @@
 # Social Wall
 A simple PHP Class to retrieve public stream from Social Networks.
 
+This code is outdated. Before using it, you probably will have to rewrite some parts of the code. We keep it here for future reference (if needed).
+
 Every single Social Network stream is implemented by an Adapter of a simple Interface that loads the Posts using its own API.
 
 ### Version
